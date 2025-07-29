@@ -72,6 +72,9 @@ const Courses = () => {
             We offer both flexible online classes and immersive in-person
             sessions. Our fee structure remains consistent across all learning
             modes, ensuring equal access to quality KSL education.
+            <span className="block mt-2 text-red-600 font-semibold">
+              🎉 Start with 3 FREE trial classes - No payment required upfront!
+            </span>
           </p>
         </div>
 
@@ -106,8 +109,11 @@ const Courses = () => {
                     <div className="text-xl font-bold text-red-600">
                       {item.fee}
                     </div>
-                    <div className="text-xs text-muted-foreground">
+                    <div className="text-xs text-muted-foreground mb-1">
                       per 3-month term
+                    </div>
+                    <div className="text-xs text-green-600 font-medium">
+                      3 FREE trial classes first
                     </div>
                   </div>
                 ))}
@@ -142,6 +148,9 @@ const Courses = () => {
                 <div className="text-sm text-muted-foreground mb-3">
                   Adams Arcade, Woodley Community Center
                 </div>
+                <div className="text-xs text-green-600 font-medium mb-2">
+                  3 FREE trial classes first
+                </div>
                 <Badge className="bg-purple-600 text-white">
                   Interactive Community Sessions
                 </Badge>
@@ -162,6 +171,15 @@ const Courses = () => {
               <CardTitle className="text-lg">
                 Course Fees (Same for All Modes)
               </CardTitle>
+              <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-4">
+                <p className="text-red-700 font-semibold text-sm mb-1">
+                  ✨ Try Before You Pay!
+                </p>
+                <p className="text-red-600 text-sm">
+                  Get 3 FREE trial classes to experience our teaching method.
+                  Only pay if you decide to continue with the full program.
+                </p>
+              </div>
               <p className="text-sm text-muted-foreground">
                 <strong>Same fees for both online and in-person modes</strong>
               </p>
@@ -228,7 +246,7 @@ const Courses = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button className="bg-red-600 hover:bg-red-700 text-white">
-                    Enroll in Next Intake
+                    Claim Your 3 FREE Classes
                   </Button>
                   <Button
                     variant="outline"
