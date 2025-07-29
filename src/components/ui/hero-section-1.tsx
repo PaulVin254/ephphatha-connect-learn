@@ -160,9 +160,9 @@ export function HeroSection() {
                     </span>
                   </h1>
                   <p className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                    Become Fluent in Kenyan Sign Language. Learn from authentic
-                    instructors in the heart of Woodley's thriving Deaf
-                    community. Stop guessing, start signing with confidence.
+                    Learn from authentic instructors in the heart of Woodley's
+                    thriving Deaf community. Stop guessing, start signing with
+                    confidence.
                   </p>
                 </AnimatedGroup>
 
@@ -232,15 +232,15 @@ export function HeroSection() {
                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <img
                     className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                    alt="app screen"
+                    src="/src/assets/sign-language-students.jpg"
+                    alt="Sign language students learning"
                     width="2700"
                     height="1440"
                   />
                   <img
                     className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                    alt="app screen"
+                    src="/src/assets/sign-language-students.jpg"
+                    alt="Sign language students learning"
                     width="2700"
                     height="1440"
                   />
