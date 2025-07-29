@@ -22,7 +22,7 @@ interface FloatingImage {
 const floatingImages: FloatingImage[] = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "Sign language hand gesture A",
     position: { top: "20%", left: "5%" },
     size: "md",
@@ -31,7 +31,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "Person signing hello",
     position: { top: "15%", right: "8%" },
     size: "sm",
@@ -40,7 +40,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "ASL alphabet letter B",
     position: { top: "45%", left: "2%" },
     size: "sm",
@@ -49,7 +49,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1607690735997-6970c5071b14?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "Sign language communication",
     position: { top: "40%", right: "5%" },
     size: "lg",
@@ -58,7 +58,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "Hand forming letter C",
     position: { bottom: "25%", left: "8%" },
     size: "sm",
@@ -67,7 +67,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "Sign language gesture love",
     position: { bottom: "20%", right: "10%" },
     size: "md",
@@ -76,7 +76,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1607690735997-6970c5071b14?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "Sign language peace gesture",
     position: { top: "60%", left: "12%" },
     size: "sm",
@@ -85,7 +85,7 @@ const floatingImages: FloatingImage[] = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
+    src: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60&fm=webp",
     alt: "ASL thank you gesture",
     position: { top: "65%", right: "15%" },
     size: "sm",

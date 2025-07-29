@@ -31,10 +31,9 @@ const transitionVariants = {
 const formerStudents = [
   {
     id: 1,
-    name: "Sarah Mwangi",
-    designation: "Now teaching at KSD",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    name: "Paul Wakoli",
+    designation: "KSL Interpreter",
+    image: "/src/assets/former-student-paul.jpg",
   },
   {
     id: 2,
