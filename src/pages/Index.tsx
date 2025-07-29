@@ -1,4 +1,3 @@
-import Hero from "@/components/Hero";
 import ProblemAgitation from "@/components/ProblemAgitation";
 import Solution from "@/components/Solution";
 import GodfatherOffer from "@/components/GodfatherOffer";
@@ -11,11 +10,10 @@ import { HeroSection } from "@/components/ui/hero-section-1";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <HeroSection />
+      <section id="home">
+        <HeroSection />
+      </section>
       <main>
-        <section id="home">
-          <Hero />
-        </section>
         <ProblemAgitation />
         <Solution />
         <GodfatherOffer />

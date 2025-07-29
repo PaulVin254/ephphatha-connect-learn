@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import FloatingImages from "@/components/ui/floating-images";
 import { cn } from "@/lib/utils";
 
 const transitionVariants = {
@@ -127,7 +128,10 @@ export function HeroSection() {
               className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--background)_75%)]"
             />
             <div className="mx-auto max-w-7xl px-6">
-              <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
+              {/* Floating Images */}
+              <FloatingImages />
+
+              <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0 relative z-10">
                 <AnimatedGroup variants={transitionVariants}>
                   <a
                     href="#link"
@@ -263,6 +267,10 @@ export function HeroSection() {
                   items={formerStudents}
                   className="justify-center"
                 />
+                <p className="text-sm text-muted-foreground/80 mt-6">
+                  ✨ No payment required • 90-Day fluency guarantee • Join the
+                  first 10 students this month
+                </p>
               </div>
             </div>
           </div>
