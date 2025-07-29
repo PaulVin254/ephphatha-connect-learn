@@ -86,7 +86,7 @@ export function HeroSection() {
           <div className="h-[80rem] absolute left-0 top-0 w-56 -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]" />
           <div className="h-[80rem] -translate-y-[350px] absolute left-0 top-0 w-56 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
         </div>
-        <section>
+        <section id="home">
           <div className="relative pt-24 md:pt-36">
             <AnimatedGroup
               variants={{
@@ -281,10 +281,10 @@ export function HeroSection() {
 }
 
 const menuItems = [
-  { name: "Features", href: "#link" },
-  { name: "Solution", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Courses", href: "#courses" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const HeroHeader = () => {
@@ -298,6 +298,20 @@ const HeroHeader = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleSmoothScroll = (href: string) => {
+    if (href.startsWith("#")) {
+      const elementId = href.substring(1);
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+    setMenuState(false); // Close mobile menu after clicking
+  };
   return (
     <header>
       <nav
@@ -308,10 +322,15 @@ const HeroHeader = () => {
           className={cn(
             "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
             isScrolled &&
-              "bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5"
+              "bg-background/50 max-w-5xl rounded-2xl border backdrop-blur-lg lg:px-6"
           )}
         >
-          <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+          <div
+            className={cn(
+              "relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4",
+              isScrolled && "lg:gap-4"
+            )}
+          >
             <div className="flex w-full justify-between lg:w-auto">
               <a
                 href="/"
@@ -332,15 +351,20 @@ const HeroHeader = () => {
             </div>
 
             <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-              <ul className="flex gap-8 text-sm">
+              <ul
+                className={cn(
+                  "flex gap-8 text-sm transition-all duration-300",
+                  isScrolled && "gap-6"
+                )}
+              >
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <a
-                      href={item.href}
-                      className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                    <button
+                      onClick={() => handleSmoothScroll(item.href)}
+                      className="text-muted-foreground hover:text-accent-foreground block duration-150 cursor-pointer"
                     >
                       <span>{item.name}</span>
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>
@@ -351,43 +375,46 @@ const HeroHeader = () => {
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
                     <li key={index}>
-                      <a
-                        href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                      <button
+                        onClick={() => handleSmoothScroll(item.href)}
+                        className="text-muted-foreground hover:text-accent-foreground block duration-150 w-full text-left"
                       >
                         <span>{item.name}</span>
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </ul>
+                <div className="mt-6 pt-6 border-t border-border">
+                  <p className="text-sm text-muted-foreground mb-2">Call us:</p>
+                  <a
+                    href="tel:+254712345678"
+                    className="text-foreground font-medium hover:text-red-600 transition-colors"
+                  >
+                    +254 712 345 678
+                  </a>
+                </div>
               </div>
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className={cn(isScrolled && "lg:hidden")}
+              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:items-center lg:flex-row lg:space-y-0">
+                <div
+                  className={cn(
+                    "hidden lg:block text-sm text-muted-foreground mr-4 transition-all duration-300",
+                    isScrolled && "lg:hidden"
+                  )}
                 >
-                  <a href="#">
-                    <span>Login</span>
+                  <a
+                    href="tel:+254712345678"
+                    className="hover:text-red-600 transition-colors"
+                  >
+                    📞 +254 712 345 678
                   </a>
-                </Button>
+                </div>
                 <Button
                   asChild
                   size="sm"
-                  className={cn(isScrolled && "lg:hidden")}
+                  className="bg-red-600 hover:bg-red-700 text-white"
                 >
-                  <a href="#">
-                    <span>Sign Up</span>
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  size="sm"
-                  className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
-                >
-                  <a href="#">
-                    <span>Get Started</span>
+                  <a href="#courses">
+                    <span>Get 3 Free Classes</span>
                   </a>
                 </Button>
               </div>
