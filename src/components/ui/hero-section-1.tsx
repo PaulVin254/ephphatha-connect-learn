@@ -155,7 +155,7 @@ export function HeroSection() {
                     <span className="inline-block">
                       <TextRotate
                         words={["Faster", "Better", "Smarter"]}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                        className="bg-gradient-to-r from-red-600 to-purple-600 bg-clip-text text-transparent"
                       />
                     </span>
                   </h1>
