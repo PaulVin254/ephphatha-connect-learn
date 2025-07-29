@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -114,5 +116,35 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .aspect-15\/8 {
+    aspect-ratio: 15 / 8;
+  }
+  
+  .h-10\.5 {
+    height: 2.625rem;
+  }
+  
+  .blur-xs {
+    filter: blur(2px);
+  }
+  
+  .inset-shadow-2xs {
+    box-shadow: inset 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+  
+  .z-\[2\] {
+    z-index: 2;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-nowrap {
+    white-space: nowrap;
   }
 }

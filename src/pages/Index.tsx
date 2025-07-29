@@ -1,4 +1,3 @@
-import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ProblemAgitation from "@/components/ProblemAgitation";
 import Solution from "@/components/Solution";
@@ -7,11 +6,12 @@ import Courses from "@/components/Courses";
 import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import { HeroSection } from "@/components/ui/hero-section-1";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navigation />
+      <HeroSection />
       <main>
         <section id="home">
           <Hero />
