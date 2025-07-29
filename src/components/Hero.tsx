@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { scrollToFreeClassesForm } from "@/lib/scroll-utils";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -30,7 +31,12 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button size="lg" variant="cta" className="text-lg px-8 py-4">
+          <Button 
+            size="lg" 
+            variant="cta" 
+            className="text-lg px-8 py-4"
+            onClick={scrollToFreeClassesForm}
+          >
             Start 3 FREE Classes Today
           </Button>
           <Button size="lg" variant="warm" className="text-lg px-8 py-4">

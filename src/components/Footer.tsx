@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { scrollToFreeClassesForm } from "@/lib/scroll-utils";
 import {
   Mail,
   MapPin,
@@ -111,7 +112,12 @@ const Footer = () => {
               authentic sign language learning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="cta" size="lg" className="px-8">
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="px-8"
+                onClick={scrollToFreeClassesForm}
+              >
                 Claim Your 3 FREE Classes
               </Button>
               <Button

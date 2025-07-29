@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { scrollToFreeClassesForm } from "@/lib/scroll-utils";
 import {
   Clock,
   Users,
@@ -245,7 +246,10 @@ const Courses = () => {
                   instruction across all learning modes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-red-600 hover:bg-red-700 text-white">
+                  <Button 
+                    className="bg-red-600 hover:bg-red-700 text-white"
+                    onClick={scrollToFreeClassesForm}
+                  >
                     Claim Your 3 FREE Classes
                   </Button>
                   <Button

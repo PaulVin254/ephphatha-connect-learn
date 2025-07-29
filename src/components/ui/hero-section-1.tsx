@@ -6,6 +6,7 @@ import { TextRotate } from "@/components/ui/text-rotate";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import FloatingImages from "@/components/ui/floating-images";
 import { cn } from "@/lib/utils";
+import { scrollToSection, scrollToFreeClassesForm } from "@/lib/scroll-utils";
 
 const transitionVariants = {
   item: {
@@ -190,15 +191,13 @@ export function HeroSection() {
                     className="bg-foreground/10 rounded-[14px] border p-0.5"
                   >
                     <Button
-                      asChild
                       size="lg"
                       className="rounded-xl px-5 text-base"
+                      onClick={scrollToFreeClassesForm}
                     >
-                      <a href="#link">
-                        <span className="text-nowrap">
-                          Start 3 FREE Classes Today
-                        </span>
-                      </a>
+                      <span className="text-nowrap">
+                        Start 3 FREE Classes Today
+                      </span>
                     </Button>
                   </div>
                   <Button
@@ -408,13 +407,11 @@ const HeroHeader = () => {
                   </a>
                 </div>
                 <Button
-                  asChild
                   size="sm"
                   className="bg-red-600 hover:bg-red-700 text-white"
+                  onClick={scrollToFreeClassesForm}
                 >
-                  <a href="#courses">
-                    <span>Get 3 Free Classes</span>
-                  </a>
+                  <span>Get 3 Free Classes</span>
                 </Button>
               </div>
             </div>
