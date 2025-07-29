@@ -150,8 +150,10 @@ export function HeroSection() {
                     </div>
                   </a>
 
-                  <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                    Learn Kenyan Sign Language{" "}
+                  <h1 className="mt-8 max-w-4xl mx-auto text-balance text-4xl md:text-5xl lg:text-6xl lg:mt-16">
+                    Learn Kenyan{" "}
+                    <span className="inline-block lg:hidden">🇰🇪</span> Sign
+                    Language{" "}
                     <span className="inline-block">
                       <TextRotate
                         words={["Faster", "Better", "Smarter"]}
@@ -159,7 +161,7 @@ export function HeroSection() {
                       />
                     </span>
                   </h1>
-                  <p className="mx-auto mt-8 max-w-2xl text-balance text-lg">
+                  <p className="mx-auto mt-6 max-w-2xl text-balance text-base md:text-lg leading-relaxed text-muted-foreground">
                     Learn from authentic instructors in the heart of Woodley's
                     thriving Deaf community. Stop guessing, start signing with
                     confidence.
