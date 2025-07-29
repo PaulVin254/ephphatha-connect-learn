@@ -101,6 +101,39 @@ export type Database = {
           },
         ]
       }
+      leads: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          level_of_interest: string | null
+          name: string
+          preferred_class: string | null
+          updated_at: string
+          whatsapp_number: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          level_of_interest?: string | null
+          name: string
+          preferred_class?: string | null
+          updated_at?: string
+          whatsapp_number?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          level_of_interest?: string | null
+          name?: string
+          preferred_class?: string | null
+          updated_at?: string
+          whatsapp_number?: string | null
+        }
+        Relationships: []
+      }
       pending_invites: {
         Row: {
           created_at: string | null
