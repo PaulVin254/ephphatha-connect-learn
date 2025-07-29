@@ -12,7 +12,7 @@ interface TextRotateProps {
 
 export function TextRotate({
   words,
-  duration = 3500,
+  duration = 2000,
   className,
 }: TextRotateProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
