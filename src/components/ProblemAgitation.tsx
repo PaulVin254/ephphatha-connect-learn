@@ -39,13 +39,13 @@ const ProblemAgitation = () => {
     <section className="py-20 bg-muted/30">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Are You Tired of
             <span className="block text-destructive">
               Sign Language Struggles?
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
             If you've been frustrated by ineffective sign language methods,
             you're not alone. Here's what most schools won't tell you about why
             students fail...

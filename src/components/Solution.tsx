@@ -28,14 +28,14 @@ const Solution = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               The 
               <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                 Ephphatha Difference
               </span>
             </h2>
             
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
               Unlike other schools, Ephphatha connects you directly to the heart of Kenya's Deaf community. 
               Our instructors aren't just teachers—they're cultural ambassadors who will guide you into 
               a world of authentic communication.

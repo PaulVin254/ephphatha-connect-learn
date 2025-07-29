@@ -78,13 +78,13 @@ const Courses = () => {
     <section className="py-20 bg-muted/30" id="courses">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Your Path to 
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               KSL Fluency
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
             Structured learning with authentic Deaf instructors. Three intake periods: 
             <strong> January, May, and September</strong> (3-month terms).
           </p>

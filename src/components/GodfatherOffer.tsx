@@ -90,7 +90,7 @@ const GodfatherOffer = () => {
             Limited to First 10 Students This Month
           </Badge>
           
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             The 
             <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
               "Godfather"
@@ -98,7 +98,7 @@ const GodfatherOffer = () => {
             Offer
           </h2>
           
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
             We're so confident in our authentic Deaf-led approach that we're making you an offer 
             you literally can't refuse. Here's everything you get when you start today:
           </p>
