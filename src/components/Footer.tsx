@@ -52,7 +52,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-400" />
                 <span className="text-sm text-slate-300">
-                  info@ephphatha.co.ke
+                  paul@ephphathakenya.co.ke
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -112,9 +112,9 @@ const Footer = () => {
               authentic sign language learning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                variant="cta" 
-                size="lg" 
+              <Button
+                variant="cta"
+                size="lg"
                 className="px-8"
                 onClick={scrollToFreeClassesForm}
               >

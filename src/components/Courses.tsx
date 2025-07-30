@@ -246,7 +246,7 @@ const Courses = () => {
                   instruction across all learning modes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
+                  <Button
                     className="bg-red-600 hover:bg-red-700 text-white"
                     onClick={scrollToFreeClassesForm}
                   >
