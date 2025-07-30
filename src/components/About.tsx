@@ -71,33 +71,6 @@ const About = () => {
     },
   ];
 
-  const teamMembers = [
-    {
-      name: "John Mwangi",
-      role: "Lead Instructor & Community Elder",
-      experience: "15+ years teaching KSL",
-      specialty: "Deaf culture & storytelling",
-    },
-    {
-      name: "Rose Achieng",
-      role: "Level 1 & 2 Instructor",
-      experience: "Native KSL, 8+ years teaching",
-      specialty: "Beginner immersion methods",
-    },
-    {
-      name: "Peter Kamau",
-      role: "Advanced Level Instructor",
-      experience: "KSL linguistics expert",
-      specialty: "Professional sign development",
-    },
-    {
-      name: "Faith Njoroge",
-      role: "Community Coordinator",
-      experience: "Bridge between hearing & Deaf",
-      specialty: "Cultural sensitivity training",
-    },
-  ];
-
   return (
     <section className="py-20 bg-muted/30" id="about">
       <div className="max-w-6xl mx-auto px-6">
@@ -141,48 +114,15 @@ const About = () => {
             >
               <CardContent className="p-8 text-center">
                 <div className="flex justify-center mb-4">{value.icon}</div>
-                <h3 className="text-lg md:text-xl font-semibold mb-4">{value.title}</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-4">
+                  {value.title}
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {value.description}
                 </p>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Team Section */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-12">
-            Meet Your
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Deaf Instructors
-            </span>
-          </h3>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
-              <Card
-                key={index}
-                className="border border-border hover:shadow-lg transition-shadow duration-300"
-              >
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-8 w-8 text-white" />
-                  </div>
-                  <h4 className="font-semibold text-lg mb-2">{member.name}</h4>
-                  <p className="text-primary text-sm font-medium mb-2">
-                    {member.role}
-                  </p>
-                  <p className="text-xs text-muted-foreground mb-1">
-                    {member.experience}
-                  </p>
-                  <p className="text-xs text-accent font-medium">
-                    {member.specialty}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
 
         {/* Location & Contact */}
@@ -216,7 +156,9 @@ const About = () => {
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Clock className="h-6 w-6 text-primary" />
-                <h3 className="text-lg md:text-xl font-semibold">Office Hours</h3>
+                <h3 className="text-lg md:text-xl font-semibold">
+                  Office Hours
+                </h3>
               </div>
               <div className="space-y-2 text-muted-foreground mb-6">
                 <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
