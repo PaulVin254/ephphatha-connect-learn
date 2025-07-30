@@ -155,12 +155,6 @@ const GodfatherOffer = () => {
       value: "Risk-Free Promise",
     },
     {
-      icon: <CheckCircle className="h-8 w-8 text-secondary" />,
-      title: "Exclusive KSL Phrasebook",
-      description: "Essential everyday phrases you can't find anywhere else.",
-      value: "Ksh 1,500 Value",
-    },
-    {
       icon: <Zap className="h-8 w-8 text-accent" />,
       title: "Lifetime Practice Community",
       description:
@@ -182,10 +176,10 @@ const GodfatherOffer = () => {
           </Badge>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            The
+            The{" "}
             <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
-              "Godfather"
-            </span>
+              Welcome
+            </span>{" "}
             Offer
           </h2>
 

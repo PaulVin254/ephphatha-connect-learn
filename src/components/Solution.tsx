@@ -6,20 +6,20 @@ const Solution = () => {
   const benefits = [
     {
       icon: <Users className="h-6 w-6 text-primary" />,
-      text: "Learn directly from native Deaf instructors from Woodley Deaf Community"
+      text: "Learn directly from native Deaf instructors from Woodley Deaf Community",
     },
     {
       icon: <Heart className="h-6 w-6 text-primary" />,
-      text: "Immerse yourself in authentic Deaf culture, not just sign vocabulary"
+      text: "Immerse yourself in authentic Deaf culture, not just sign vocabulary",
     },
     {
       icon: <Award className="h-6 w-6 text-primary" />,
-      text: "Master real conversational KSL that Deaf people actually use"
+      text: "Master real conversational KSL that Deaf people actually use",
     },
     {
       icon: <CheckCircle className="h-6 w-6 text-primary" />,
-      text: "Build genuine confidence through community connection"
-    }
+      text: "Build genuine confidence through community connection",
+    },
   ];
 
   return (
@@ -29,16 +29,17 @@ const Solution = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              The 
+              The{" "}
               <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                 Ephphatha Difference
               </span>
             </h2>
-            
+
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
-              Unlike other schools, Ephphatha connects you directly to the heart of Kenya's Deaf community. 
-              Our instructors aren't just teachers—they're cultural ambassadors who will guide you into 
-              a world of authentic communication.
+              Unlike other schools, Ephphatha connects you directly to the heart
+              of Kenya's Deaf community. Our instructors aren't just
+              teachers—they're cultural ambassadors who will guide you into a
+              world of authentic communication.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -55,9 +56,10 @@ const Solution = () => {
                 Why Woodley Deaf Community?
               </h3>
               <p className="text-foreground">
-                Located in Adams Arcade, Ngong Road, our instructors come from one of Kenya's most 
-                vibrant Deaf communities. You're not just learning a language—you're joining a family 
-                that has been communicating in authentic KSL for generations.
+                Located in Adams Arcade, Ngong Road, our instructors come from
+                one of Kenya's most vibrant Deaf communities. You're not just
+                learning a language—you're joining a family that has been
+                communicating in authentic KSL for generations.
               </p>
             </div>
 
@@ -68,13 +70,13 @@ const Solution = () => {
 
           {/* Image */}
           <div className="relative">
-            <img 
-              src={communityImage} 
+            <img
+              src={communityImage}
               alt="Community learning environment"
               className="rounded-2xl shadow-2xl w-full"
             />
-            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground rounded-lg p-6 max-w-xs">
-              <p className="font-semibold">
+            <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 lg:-bottom-6 lg:-right-6 bg-primary text-primary-foreground rounded-lg p-2 sm:p-4 lg:p-6 max-w-[150px] sm:max-w-[200px] lg:max-w-xs shadow-lg">
+              <p className="font-semibold text-xs sm:text-sm lg:text-base leading-tight">
                 "Not just a school. A movement for connection."
               </p>
             </div>
