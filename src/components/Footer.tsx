@@ -16,7 +16,7 @@ const Footer = () => {
     { label: "About", href: "#about" },
     { label: "Courses", href: "#courses" },
     { label: "Free Classes", href: "#free-classes" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "#free-classes" },
   ];
 
   const resources = [

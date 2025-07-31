@@ -282,7 +282,7 @@ const menuItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Courses", href: "#courses" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#free-classes" },
 ];
 
 const HeroHeader = () => {

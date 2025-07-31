@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
+import { scrollToFreeClassesForm } from "@/lib/scroll-utils";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navigation = () => {
     { href: "#about", label: "About" },
     { href: "#courses", label: "Courses" },
     { href: "#resources", label: "Resources" },
-    { href: "#contact", label: "Contact" },
+    { href: "#free-classes", label: "Contact" },
   ];
 
   return (
@@ -43,7 +44,7 @@ const Navigation = () => {
               <MessageCircle className="h-4 w-4" />
               WhatsApp
             </Button>
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" onClick={scrollToFreeClassesForm}>
               Join Free Classes
             </Button>
           </div>
@@ -79,7 +80,7 @@ const Navigation = () => {
                   <MessageCircle className="h-4 w-4" />
                   WhatsApp
                 </Button>
-                <Button variant="hero" size="sm" className="w-full">
+                <Button variant="hero" size="sm" className="w-full" onClick={scrollToFreeClassesForm}>
                   Join Free Classes
                 </Button>
               </div>

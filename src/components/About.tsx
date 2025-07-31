@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Award, MapPin, Clock, Mail } from "lucide-react";
+import { scrollToFreeClassesForm } from "@/lib/scroll-utils";
 
 const About = () => {
   const handleGetDirections = () => {
@@ -169,7 +170,11 @@ const About = () => {
                 <Mail className="h-5 w-5 text-primary" />
                 <span className="text-sm">info@ephphatha.co.ke</span>
               </div>
-              <Button variant="hero" className="w-full">
+              <Button
+                variant="hero"
+                className="w-full"
+                onClick={scrollToFreeClassesForm}
+              >
                 Contact Us Today
               </Button>
             </CardContent>
