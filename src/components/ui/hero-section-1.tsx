@@ -38,17 +38,15 @@ const formerStudents = [
   },
   {
     id: 2,
-    name: "James Kiprotich",
-    designation: "ASL Interpreter",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    name: "Evans Morekerwa",
+    designation: "KSL Interpreter",
+    image: "/former-student-evans.jpg",
   },
   {
     id: 3,
-    name: "Grace Wanjiku",
+    name: "Fred Otieno",
     designation: "Community Leader",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    image: "/former-student-fred.jpg",
   },
   {
     id: 4,
