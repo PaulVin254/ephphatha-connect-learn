@@ -50,10 +50,9 @@ const formerStudents = [
   },
   {
     id: 4,
-    name: "David Ochieng",
+    name: "Marion Chudu",
     designation: "Deaf Rights Advocate",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    image: "/former-student-marion.jpg",
   },
   {
     id: 5,
