@@ -51,22 +51,8 @@ const formerStudents = [
   {
     id: 4,
     name: "Marion Chudu",
-    designation: "Deaf Rights Advocate",
+    designation: "KSL Interpreter",
     image: "/former-student-marion.jpg",
-  },
-  {
-    id: 5,
-    name: "Mary Njeri",
-    designation: "Sign Language Teacher",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
-  },
-  {
-    id: 6,
-    name: "Peter Kamau",
-    designation: "Deaf Community Organizer",
-    image:
-      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
   },
 ];
 
