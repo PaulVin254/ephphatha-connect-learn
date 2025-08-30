@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Space Grotesk', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				sans: ['Satoshi', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 			},
 			aspectRatio: {
 				'15/8': '15 / 8',
