@@ -71,7 +71,7 @@ const Solution = () => {
           {/* Image */}
           <div className="relative">
             <img
-              src={communityImage}
+              src="/ephphatha-community.JPG"
               alt="Community learning environment"
               className="rounded-2xl shadow-2xl w-full"
             />
