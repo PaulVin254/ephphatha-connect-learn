@@ -126,6 +126,43 @@ const About = () => {
           ))}
         </div>
 
+        {/* Classroom Learning Environment */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Our Learning Environment
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Experience interactive, hands-on KSL learning in our welcoming
+              classroom where every student receives personalized attention
+            </p>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="/class-ongoing.JPG"
+              alt="Students learning sign language in classroom setting"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6">
+              <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium text-gray-800">
+                      Class in Session
+                    </span>
+                  </div>
+                  <div className="text-sm text-gray-600">•</div>
+                  <span className="text-sm text-gray-600">
+                    Interactive KSL Learning
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Location & Contact */}
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="border-2 border-border">
