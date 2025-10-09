@@ -205,7 +205,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm">info@ephphatha.co.ke</span>
+                <span className="text-sm">liturgye@gmail.com</span>
               </div>
               <Button
                 variant="hero"

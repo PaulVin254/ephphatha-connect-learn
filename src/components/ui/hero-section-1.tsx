@@ -32,24 +32,18 @@ const transitionVariants = {
 const formerStudents = [
   {
     id: 1,
-    name: "Paul Wakoli",
-    designation: "KSL Interpreter",
-    image: "/former-student-paul.jpg",
-  },
-  {
-    id: 2,
     name: "Evans Morekerwa",
     designation: "KSL Interpreter",
     image: "/former-student-evans.jpg",
   },
   {
-    id: 3,
+    id: 2,
     name: "Fred Otieno",
     designation: "Community Leader",
     image: "/former-student-fred.jpg",
   },
   {
-    id: 4,
+    id: 3,
     name: "Marion Chudu",
     designation: "KSL Interpreter",
     image: "/former-student-marion.jpg",
