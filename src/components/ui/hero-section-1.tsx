@@ -368,10 +368,10 @@ const HeroHeader = () => {
                 <div className="mt-6 pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground mb-2">Call us:</p>
                   <a
-                    href="tel:+254717297022"
+                    href="tel:++254706241832"
                     className="text-foreground font-medium hover:text-red-600 transition-colors"
                   >
-                    +254 717 297 022
+                    +254 706 241 832
                   </a>
                 </div>
               </div>
@@ -383,10 +383,10 @@ const HeroHeader = () => {
                   )}
                 >
                   <a
-                    href="tel:+254717297022"
+                    href="tel:+254706241832"
                     className="hover:text-red-600 transition-colors"
                   >
-                    📞 +254 717 297 022
+                    📞 +254 706 241 832
                   </a>
                 </div>
                 <Button
