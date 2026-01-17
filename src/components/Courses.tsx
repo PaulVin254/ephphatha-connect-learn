@@ -253,10 +253,17 @@ const Courses = () => {
                     Claim Your 3 FREE Classes
                   </Button>
                   <Button
+                    asChild
                     variant="outline"
                     className="border-red-600 text-red-600 hover:bg-red-50"
                   >
-                    Download Full Schedule
+                    <a
+                      href="https://aojlbhvjvoxofdzzjrud.supabase.co/storage/v1/object/public/Learn%20Kenyan%20Sign%20Language%20in%201%20hour/Learn%20Kenyan%20Sign%20Language%20in%201%20hour%20(FREE).pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download Full Schedule
+                    </a>
                   </Button>
                 </div>
               </div>

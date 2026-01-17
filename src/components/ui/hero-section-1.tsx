@@ -184,7 +184,11 @@ export function HeroSection() {
                     variant="ghost"
                     className="h-10.5 rounded-xl px-5"
                   >
-                    <a href="#link">
+                    <a
+                      href="https://aojlbhvjvoxofdzzjrud.supabase.co/storage/v1/object/public/Learn%20Kenyan%20Sign%20Language%20in%201%20hour/Learn%20Kenyan%20Sign%20Language%20in%201%20hour%20(FREE).pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <span className="text-nowrap">View Class Schedule</span>
                     </a>
                   </Button>
@@ -297,13 +301,13 @@ const HeroHeader = () => {
           className={cn(
             "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
             isScrolled &&
-              "bg-background/50 max-w-5xl rounded-2xl border backdrop-blur-lg lg:px-6"
+              "bg-background/50 max-w-5xl rounded-2xl border backdrop-blur-lg lg:px-6",
           )}
         >
           <div
             className={cn(
               "relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4",
-              isScrolled && "lg:gap-4"
+              isScrolled && "lg:gap-4",
             )}
           >
             <div className="flex w-full justify-between lg:w-auto">
@@ -329,7 +333,7 @@ const HeroHeader = () => {
               <ul
                 className={cn(
                   "flex gap-8 text-sm transition-all duration-300",
-                  isScrolled && "gap-6"
+                  isScrolled && "gap-6",
                 )}
               >
                 {menuItems.map((item, index) => (
@@ -373,7 +377,7 @@ const HeroHeader = () => {
                 <div
                   className={cn(
                     "hidden lg:block text-sm text-muted-foreground mr-4 transition-all duration-300",
-                    isScrolled && "lg:hidden"
+                    isScrolled && "lg:hidden",
                   )}
                 >
                   <a
