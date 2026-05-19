@@ -1,0 +1,43 @@
+name: Deploy to Azure Blob Storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy_job:
+    runs-on: ubuntu-latest
+    name: Build & Deploy to Blob Storage
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        env: # Required so Vite can bake these into the static bundle
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+        run: npm run build
+
+      - name: Deploy to Azure Storage
+        uses: azure/CLI@v2
+        with:
+          inlineScript: |
+            # Upload the 'dist' folder to the '$web' container 
+            az storage blob upload-batch \
+              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+              --destination '$web' \
+              --source dist/ \
+              --overwrite
+        env:
+          # This authenticates the Azure CLI step
+          AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
