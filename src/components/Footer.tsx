@@ -174,9 +174,17 @@ const Footer = () => {
               websites.
             </p>
             <p className="text-slate-500 text-xs mt-4 max-w-lg ml-auto border-t border-slate-700/50 pt-4">
-              Ephphatha Sign Language is a specialized educational project and
-              subsidiary division proudly operated under the corporate umbrella
-              of Eris Engineering Ltd.
+              Ephphatha Sign Language School is a specialized educational
+              project and subsidiary division proudly operated under the
+              corporate umbrella of{" "}
+              <a
+                href="https://erisengineering.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-red-400 underline transition-colors"
+              >
+                Eris Engineering Ltd.
+              </a>
             </p>
           </div>
         </div>
