@@ -12,7 +12,7 @@ const About = () => {
     // Smart device detection
     const isMobile =
       /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
+        navigator.userAgent,
       );
     const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
     const isAndroid = /Android/.test(navigator.userAgent);
@@ -23,7 +23,7 @@ const About = () => {
         // iOS - Try Apple Maps first, then fallback to Google Maps
         window.open(
           `maps://maps.apple.com/?q=${encodeURIComponent(schoolAddress)}`,
-          "_blank"
+          "_blank",
         );
         // Fallback to Google Maps link after short delay
         setTimeout(() => {
@@ -33,9 +33,9 @@ const About = () => {
         // Android - Try Google Maps app with intent, then fallback to web
         window.open(
           `intent://maps.google.com/?q=${encodeURIComponent(
-            schoolAddress
+            schoolAddress,
           )}#Intent;scheme=https;package=com.google.android.apps.maps;end`,
-          "_blank"
+          "_blank",
         );
         // Fallback to Google Maps link after short delay
         setTimeout(() => {
@@ -77,7 +77,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <Badge className="mb-4 px-4 py-2 bg-primary/10 text-primary border-primary/20">
-            About Ephphatha
+            About Ephphatha Sign Language School
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Not Just a School.
@@ -87,8 +87,9 @@ const About = () => {
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Founded in the heart of Nairobi's Woodley Deaf Community, Ephphatha
-            exists to bridge the communication gap between the hearing and Deaf
-            worlds through authentic, culturally-rich KSL education.
+            Sign Language School exists to bridge the communication gap between
+            the hearing and Deaf worlds through authentic, culturally-rich KSL
+            education.
           </p>
         </div>
 

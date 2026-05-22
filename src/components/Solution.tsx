@@ -31,15 +31,15 @@ const Solution = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               The{" "}
               <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-                Ephphatha Difference
+                Ephphatha Sign Language School Difference
               </span>
             </h2>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
-              Unlike other schools, Ephphatha connects you directly to the heart
-              of Kenya's Deaf community. Our instructors aren't just
-              teachers—they're cultural ambassadors who will guide you into a
-              world of authentic communication.
+              Unlike other schools, Ephphatha Sign Language School connects you
+              directly to the heart of Kenya's Deaf community. Our instructors
+              aren't just teachers—they're cultural ambassadors who will guide
+              you into a world of authentic communication.
             </p>
 
             <div className="space-y-4 mb-8">

@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Brand & Mission */}
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
-              Ephphatha
+              Ephphatha Sign Language School
             </h3>
             <p className="text-slate-300 mb-6 leading-relaxed max-w-md">
               Bridging the communication gap through authentic Kenyan Sign
@@ -157,7 +157,8 @@ const Footer = () => {
 
           <div className="text-center md:text-right">
             <p className="text-slate-400 text-sm">
-              © {new Date().getFullYear()} Ephphatha Kenya. All rights reserved.
+              © {new Date().getFullYear()} Ephphatha Sign Language School. All
+              rights reserved.
             </p>
             <p className="text-slate-500 text-xs mt-2">
               Designed with ❤️ by{" "}
