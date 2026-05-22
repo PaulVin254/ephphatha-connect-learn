@@ -164,11 +164,18 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/paul-wakoli/"
                 className="text-red-400 hover:text-red-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Paul Wakoli
               </a>
               , who learned KSL here, interpreted part-time, and now builds
               websites.
+            </p>
+            <p className="text-slate-500 text-xs mt-4 max-w-lg ml-auto border-t border-slate-700/50 pt-4">
+              Ephphatha Sign Language is a specialized educational project and
+              subsidiary division proudly operated under the corporate umbrella
+              of Eris Engineering Ltd.
             </p>
           </div>
         </div>
